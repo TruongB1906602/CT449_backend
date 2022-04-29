@@ -93,14 +93,7 @@ const routes = [
 		name: "profile",
 		component: () => import("@/views/UserProfile.vue"),
 	},
-	{
-		path: "/dialog",
-		name: "dialog",
-		meta: {
-			publicPage: true,
-		},
-		component: () => import("@/views/Dialog.vue"),
-	},
+
 	{
 		path: "/contacts/:id",
 		name: "contact.edit",
