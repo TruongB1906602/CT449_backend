@@ -39,17 +39,6 @@
 						Tổng tiền:
 						<span style="font-weight: bold;float: right;color: red; font-size: 24px;">{{ cartTotal }}0đ</span>
                     </p>
-                     <!-- <div v-if="currentUser" class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<router-link :to="{ name: 'profile' }" class="nav-link">{{
-									currentUser.username
-								}}</router-link>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" @click.prevent="handleLogout">Đăng xuất</a>
-							</li>
-				 	</div> -->
-		           
 						 <div  v-if="currentUser"> 
 							 <router-link to="/add"> 
 								 <button  :disabled="!cartItems.length" class="check-btn">

@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router";
-// import Home from "@/components/Home.vue";
 import UserLogin from "@/views/UserLogin.vue";
 import Navbar from "@/components/Navbar.vue";
 import ProductList from "@/components/product/ProductList.vue";
@@ -7,7 +6,6 @@ import ProductList from "@/components/product/ProductList.vue";
 import Footer from "@/components/Footer.vue";
 import CartList from "@/components/cart/CartList.vue";
 import ContactAdd from "@/views/ContactAdd.vue";
-import Dialog from "@/views/Dialog.vue";
  import { useAuthStore } from "@/stores/auth.store";
 
  const redirectIfLoggedIn = (_to, _from) => {
@@ -19,11 +17,7 @@ import Dialog from "@/views/Dialog.vue";
 };
 
 const routes = [
-	{
-	  	path: "/contact",
-	 	name: "contactbook",
-	  	component: () => import("@/views/ContactBook.vue"),
-	  },
+	
 	
 	{
 		path: "/cart",
